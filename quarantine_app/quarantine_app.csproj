@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC9FA257-C5F1-4093-84F2-E2CA0E48F6FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>quarantine_app</RootNamespace>
+    <AssemblyName>quarantine_app</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DSkin, Version=16.6.3.30, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="DSkin.Design, Version=16.6.3.30, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DSkin.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport, Version=2021.3.0.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>obj\Debug\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=2021.3.0.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>obj\Debug\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=2021.3.0.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>obj\Debug\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\christy\Downloads\mysql.data\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accountInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="accountInfo.Designer.cs">
+      <DependentUpon>accountInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="accountManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="accountManage.Designer.cs">
+      <DependentUpon>accountManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addLink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addLink.Designer.cs">
+      <DependentUpon>addLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="authControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="authControl.Designer.cs">
+      <DependentUpon>authControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="declareChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="declareChange.Designer.cs">
+      <DependentUpon>declareChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="declareControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="declareControl.Designer.cs">
+      <DependentUpon>declareControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="declareResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="declareResult.Designer.cs">
+      <DependentUpon>declareResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="deleteDoc.Designer.cs">
+      <DependentUpon>deleteDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteLink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="deleteLink.Designer.cs">
+      <DependentUpon>deleteLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fileView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fileView.Designer.cs">
+      <DependentUpon>fileView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fillResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fillResult.Designer.cs">
+      <DependentUpon>fillResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="historyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="historyControl.Designer.cs">
+      <DependentUpon>historyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HttpUtils.cs" />
+    <Compile Include="identifyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="identifyControl.Designer.cs">
+      <DependentUpon>identifyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index.Designer.cs">
+      <DependentUpon>index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="linkView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="linkView.Designer.cs">
+      <DependentUpon>linkView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="meetingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="meetingControl.Designer.cs">
+      <DependentUpon>meetingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newsWindow.Designer.cs">
+      <DependentUpon>newsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pictureWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pictureWindow.Designer.cs">
+      <DependentUpon>pictureWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="platManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="platManage.Designer.cs">
+      <DependentUpon>platManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="platWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="platWindow.Designer.cs">
+      <DependentUpon>platWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printForm.Designer.cs">
+      <DependentUpon>printForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="recordControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="recordControl.Designer.cs">
+      <DependentUpon>recordControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerForm.Designer.cs">
+      <DependentUpon>registerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="resultControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="resultControl.Designer.cs">
+      <DependentUpon>resultControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sampleSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sampleSearch.Designer.cs">
+      <DependentUpon>sampleSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchSampleResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchSampleResult.Designer.cs">
+      <DependentUpon>searchSampleResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="speciesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="speciesControl.Designer.cs">
+      <DependentUpon>speciesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temp.Designer.cs">
+      <DependentUpon>temp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uploadDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uploadDoc.Designer.cs">
+      <DependentUpon>uploadDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="accountInfo.resx">
+      <DependentUpon>accountInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accountManage.resx">
+      <DependentUpon>accountManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addLink.resx">
+      <DependentUpon>addLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="authControl.resx">
+      <DependentUpon>authControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="declareChange.resx">
+      <DependentUpon>declareChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="declareControl.resx">
+      <DependentUpon>declareControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="declareResult.resx">
+      <DependentUpon>declareResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteDoc.resx">
+      <DependentUpon>deleteDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteLink.resx">
+      <DependentUpon>deleteLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fileView.resx">
+      <DependentUpon>fileView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fillResult.resx">
+      <DependentUpon>fillResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="historyControl.resx">
+      <DependentUpon>historyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="identifyControl.resx">
+      <DependentUpon>identifyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index.resx">
+      <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="linkView.resx">
+      <DependentUpon>linkView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meetingControl.resx">
+      <DependentUpon>meetingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newsWindow.resx">
+      <DependentUpon>newsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pictureWindow.resx">
+      <DependentUpon>pictureWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="platManage.resx">
+      <DependentUpon>platManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="platWindow.resx">
+      <DependentUpon>platWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printForm.resx">
+      <DependentUpon>printForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recordControl.resx">
+      <DependentUpon>recordControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerForm.resx">
+      <DependentUpon>registerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resultControl.resx">
+      <DependentUpon>resultControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sampleSearch.resx">
+      <DependentUpon>sampleSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchSampleResult.resx">
+      <DependentUpon>searchSampleResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="speciesControl.resx">
+      <DependentUpon>speciesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temp.resx">
+      <DependentUpon>temp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadDoc.resx">
+      <DependentUpon>uploadDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_6697.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\最小化.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\最大化.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-12-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-13-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-13-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-15-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-15-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-12-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-13-31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-15-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-1611.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-031.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\显微镜.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图片 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biology.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-12-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-13-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-15-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\动植检-1612.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
