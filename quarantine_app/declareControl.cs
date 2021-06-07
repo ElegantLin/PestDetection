@@ -151,8 +151,29 @@ namespace quarantine_app
                     "pos", pos
                 }
             };
+            //try
+            //{
             string storeRes = HttpUtils.UploadImage(api_url + "submit_declare", img_urls, storeDic);
+            //}
+            Console.WriteLine(storeRes);
             if (storeRes.Contains("ok"))
+            {
+                DialogResult dr = MessageBox.Show("申报成功！", "提示", MessageBoxButtons.OK);
+                if (dr == DialogResult.OK)
+                {
+                    generateNum();
+                    declare_country.Text = "";
+                    declare_remark.Text = "";
+                    offline_way.Checked = true;
+                    declare_department.Text = "";
+                    declare_cargo.Text = "";
+                    declare_pos.Text = "";
+                    declare_img1.BackgroundImage = original;
+                    declare_img2.BackgroundImage = blank;
+                    declare_img3.BackgroundImage = blank;
+                }
+            }
+            else if(storeRes.Contains("ok"))
             {
                 DialogResult dr = MessageBox.Show("申报成功！", "提示", MessageBoxButtons.OK);
                 if (dr == DialogResult.OK)

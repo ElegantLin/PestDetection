@@ -54,7 +54,6 @@
             this.dSkinTableLayoutPanel6 = new DSkin.Controls.DSkinTableLayoutPanel();
             this.closeWin = new System.Windows.Forms.Button();
             this.minSize = new System.Windows.Forms.Button();
-            this.maxSize = new System.Windows.Forms.Button();
             this.loginBgPanel.SuspendLayout();
             this.dSkinTableLayoutPanel1.SuspendLayout();
             this.loginWin.SuspendLayout();
@@ -78,8 +77,8 @@
             this.topPanel.Location = new System.Drawing.Point(0, 0);
             this.topPanel.Margin = new System.Windows.Forms.Padding(0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 6);
-            this.topPanel.Size = new System.Drawing.Size(0, 6);
+            this.topPanel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.topPanel.Size = new System.Drawing.Size(0, 5);
             this.topPanel.TabIndex = 6;
             // 
             // loginBgPanel
@@ -89,10 +88,9 @@
             this.loginBgPanel.Controls.Add(this.dSkinTableLayoutPanel5);
             this.loginBgPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loginBgPanel.Location = new System.Drawing.Point(0, 0);
-            this.loginBgPanel.Margin = new System.Windows.Forms.Padding(4);
             this.loginBgPanel.Name = "loginBgPanel";
             this.loginBgPanel.RightBottom = ((System.Drawing.Image)(resources.GetObject("loginBgPanel.RightBottom")));
-            this.loginBgPanel.Size = new System.Drawing.Size(1340, 788);
+            this.loginBgPanel.Size = new System.Drawing.Size(1005, 630);
             this.loginBgPanel.TabIndex = 7;
             this.loginBgPanel.Text = "dSkinPanel3";
             // 
@@ -106,15 +104,14 @@
             this.dSkinTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.dSkinTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.dSkinTableLayoutPanel1.Controls.Add(this.loginWin, 1, 1);
-            this.dSkinTableLayoutPanel1.Location = new System.Drawing.Point(0, 46);
-            this.dSkinTableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.dSkinTableLayoutPanel1.Location = new System.Drawing.Point(0, 37);
             this.dSkinTableLayoutPanel1.Name = "dSkinTableLayoutPanel1";
             this.dSkinTableLayoutPanel1.RightBottom = ((System.Drawing.Image)(resources.GetObject("dSkinTableLayoutPanel1.RightBottom")));
             this.dSkinTableLayoutPanel1.RowCount = 3;
             this.dSkinTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.14529F));
             this.dSkinTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.86325F));
             this.dSkinTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.99146F));
-            this.dSkinTableLayoutPanel1.Size = new System.Drawing.Size(1341, 741);
+            this.dSkinTableLayoutPanel1.Size = new System.Drawing.Size(1006, 593);
             this.dSkinTableLayoutPanel1.TabIndex = 7;
             // 
             // loginWin
@@ -128,17 +125,16 @@
             this.loginWin.Controls.Add(this.dSkinTableLayoutPanel3, 0, 1);
             this.loginWin.Controls.Add(this.dSkinTableLayoutPanel4, 0, 3);
             this.loginWin.Controls.Add(this.tableLayoutPanel4, 0, 4);
-            this.loginWin.Location = new System.Drawing.Point(808, 145);
-            this.loginWin.Margin = new System.Windows.Forms.Padding(4);
+            this.loginWin.Location = new System.Drawing.Point(606, 116);
             this.loginWin.Name = "loginWin";
-            this.loginWin.Padding = new System.Windows.Forms.Padding(33, 25, 33, 0);
+            this.loginWin.Padding = new System.Windows.Forms.Padding(25, 20, 25, 0);
             this.loginWin.RowCount = 5;
             this.loginWin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.loginWin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.loginWin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.loginWin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.loginWin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.loginWin.Size = new System.Drawing.Size(493, 293);
+            this.loginWin.Size = new System.Drawing.Size(370, 232);
             this.loginWin.TabIndex = 2;
             // 
             // dSkinTableLayoutPanel2
@@ -152,20 +148,19 @@
             this.dSkinTableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.dSkinTableLayoutPanel2.Controls.Add(this.password, 2, 0);
             this.dSkinTableLayoutPanel2.Controls.Add(this.dSkinPanel2, 1, 0);
-            this.dSkinTableLayoutPanel2.Location = new System.Drawing.Point(37, 136);
-            this.dSkinTableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.dSkinTableLayoutPanel2.Location = new System.Drawing.Point(28, 107);
             this.dSkinTableLayoutPanel2.Name = "dSkinTableLayoutPanel2";
             this.dSkinTableLayoutPanel2.RightBottom = ((System.Drawing.Image)(resources.GetObject("dSkinTableLayoutPanel2.RightBottom")));
             this.dSkinTableLayoutPanel2.RowCount = 1;
             this.dSkinTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.dSkinTableLayoutPanel2.Size = new System.Drawing.Size(419, 30);
+            this.dSkinTableLayoutPanel2.Size = new System.Drawing.Size(314, 24);
             this.dSkinTableLayoutPanel2.TabIndex = 10;
             // 
             // password
             // 
             this.password.BackColor = System.Drawing.Color.White;
             this.password.BitmapCache = false;
-            this.password.BorderColor = System.Drawing.Color.Snow;
+            this.password.BorderColor = System.Drawing.Color.Black;
             this.password.Borders.BottomColor = System.Drawing.SystemColors.ControlDarkDark;
             this.password.Borders.LeftColor = System.Drawing.SystemColors.WindowFrame;
             this.password.Borders.LeftWidth = 0;
@@ -175,19 +170,19 @@
             this.password.Borders.TopWidth = 0;
             this.password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.password.DuiBackgroundRender.BorderColor = System.Drawing.Color.DarkGray;
-            this.password.FocusedBorderColor = System.Drawing.Color.Snow;
-            this.password.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.password.FocusedBorderColor = System.Drawing.Color.Black;
+            this.password.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.password.ForeColor = System.Drawing.Color.DimGray;
-            this.password.HoverBorderColor = System.Drawing.Color.Snow;
-            this.password.Location = new System.Drawing.Point(124, 4);
-            this.password.Margin = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            this.password.HoverBorderColor = System.Drawing.Color.Black;
+            this.password.Location = new System.Drawing.Point(93, 3);
+            this.password.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.password.Name = "password";
             this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(250, 30);
+            this.password.Size = new System.Drawing.Size(188, 26);
             this.password.TabIndex = 9;
             this.password.TransparencyKey = System.Drawing.Color.Empty;
             this.password.WaterColor = System.Drawing.Color.Snow;
-            this.password.WaterFont = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.password.WaterFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.password.WaterText = "";
             this.password.WaterTextOffset = new System.Drawing.Point(0, 0);
             // 
@@ -195,23 +190,22 @@
             // 
             this.dSkinPanel2.BackColor = System.Drawing.Color.Transparent;
             this.dSkinPanel2.Controls.Add(this.dSkinLabel1);
-            this.dSkinPanel2.Location = new System.Drawing.Point(41, 4);
-            this.dSkinPanel2.Margin = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            this.dSkinPanel2.Location = new System.Drawing.Point(31, 3);
+            this.dSkinPanel2.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.dSkinPanel2.Name = "dSkinPanel2";
             this.dSkinPanel2.RightBottom = ((System.Drawing.Image)(resources.GetObject("dSkinPanel2.RightBottom")));
-            this.dSkinPanel2.Size = new System.Drawing.Size(83, 22);
+            this.dSkinPanel2.Size = new System.Drawing.Size(62, 18);
             this.dSkinPanel2.TabIndex = 11;
             this.dSkinPanel2.Text = "dSkinPanel2";
             // 
             // dSkinLabel1
             // 
             this.dSkinLabel1.BackColor = System.Drawing.Color.White;
-            this.dSkinLabel1.Font = new System.Drawing.Font("SimHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dSkinLabel1.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dSkinLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.dSkinLabel1.Location = new System.Drawing.Point(21, 4);
-            this.dSkinLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.dSkinLabel1.Location = new System.Drawing.Point(14, 3);
             this.dSkinLabel1.Name = "dSkinLabel1";
-            this.dSkinLabel1.Size = new System.Drawing.Size(48, 26);
+            this.dSkinLabel1.Size = new System.Drawing.Size(39, 21);
             this.dSkinLabel1.TabIndex = 1;
             this.dSkinLabel1.Text = "密码";
             // 
@@ -223,25 +217,24 @@
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(37, 29);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(28, 23);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(419, 56);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(314, 45);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.CadetBlue;
-            this.label1.Font = new System.Drawing.Font("SimHei", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Font = new System.Drawing.Font("黑体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(17, 22);
-            this.label1.Margin = new System.Windows.Forms.Padding(17, 22, 4, 0);
+            this.label1.Location = new System.Drawing.Point(13, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(13, 18, 3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 25);
+            this.label1.Size = new System.Drawing.Size(198, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "动植检数据管理系统";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -257,20 +250,19 @@
             this.dSkinTableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.dSkinTableLayoutPanel3.Controls.Add(this.userName, 2, 0);
             this.dSkinTableLayoutPanel3.Controls.Add(this.dSkinPanel1, 1, 0);
-            this.dSkinTableLayoutPanel3.Location = new System.Drawing.Point(37, 96);
-            this.dSkinTableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
+            this.dSkinTableLayoutPanel3.Location = new System.Drawing.Point(28, 76);
             this.dSkinTableLayoutPanel3.Name = "dSkinTableLayoutPanel3";
             this.dSkinTableLayoutPanel3.RightBottom = ((System.Drawing.Image)(resources.GetObject("dSkinTableLayoutPanel3.RightBottom")));
             this.dSkinTableLayoutPanel3.RowCount = 1;
             this.dSkinTableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.dSkinTableLayoutPanel3.Size = new System.Drawing.Size(419, 30);
+            this.dSkinTableLayoutPanel3.Size = new System.Drawing.Size(314, 24);
             this.dSkinTableLayoutPanel3.TabIndex = 8;
             // 
             // userName
             // 
             this.userName.BackColor = System.Drawing.Color.White;
             this.userName.BitmapCache = false;
-            this.userName.BorderColor = System.Drawing.Color.Snow;
+            this.userName.BorderColor = System.Drawing.Color.Black;
             this.userName.Borders.BottomColor = System.Drawing.SystemColors.ControlDarkDark;
             this.userName.Borders.LeftColor = System.Drawing.SystemColors.WindowFrame;
             this.userName.Borders.LeftWidth = 0;
@@ -281,18 +273,18 @@
             this.userName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.userName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.userName.DuiBackgroundRender.BorderColor = System.Drawing.Color.DarkGray;
-            this.userName.FocusedBorderColor = System.Drawing.Color.Snow;
-            this.userName.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.userName.FocusedBorderColor = System.Drawing.Color.Black;
+            this.userName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.userName.ForeColor = System.Drawing.Color.DimGray;
-            this.userName.HoverBorderColor = System.Drawing.Color.Snow;
-            this.userName.Location = new System.Drawing.Point(124, 4);
-            this.userName.Margin = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            this.userName.HoverBorderColor = System.Drawing.Color.Black;
+            this.userName.Location = new System.Drawing.Point(93, 3);
+            this.userName.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.userName.Name = "userName";
-            this.userName.Size = new System.Drawing.Size(250, 30);
+            this.userName.Size = new System.Drawing.Size(188, 26);
             this.userName.TabIndex = 9;
             this.userName.TransparencyKey = System.Drawing.Color.Empty;
             this.userName.WaterColor = System.Drawing.Color.Snow;
-            this.userName.WaterFont = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.userName.WaterFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.userName.WaterText = "";
             this.userName.WaterTextOffset = new System.Drawing.Point(0, 0);
             // 
@@ -300,24 +292,23 @@
             // 
             this.dSkinPanel1.BackColor = System.Drawing.Color.Transparent;
             this.dSkinPanel1.Controls.Add(this.dSkinLabel2);
-            this.dSkinPanel1.Font = new System.Drawing.Font("YouYuan", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dSkinPanel1.Location = new System.Drawing.Point(41, 4);
-            this.dSkinPanel1.Margin = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            this.dSkinPanel1.Font = new System.Drawing.Font("幼圆", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dSkinPanel1.Location = new System.Drawing.Point(31, 3);
+            this.dSkinPanel1.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.dSkinPanel1.Name = "dSkinPanel1";
             this.dSkinPanel1.RightBottom = ((System.Drawing.Image)(resources.GetObject("dSkinPanel1.RightBottom")));
-            this.dSkinPanel1.Size = new System.Drawing.Size(83, 22);
+            this.dSkinPanel1.Size = new System.Drawing.Size(62, 18);
             this.dSkinPanel1.TabIndex = 10;
             this.dSkinPanel1.Text = "dSkinPanel1";
             // 
             // dSkinLabel2
             // 
             this.dSkinLabel2.BackColor = System.Drawing.Color.White;
-            this.dSkinLabel2.Font = new System.Drawing.Font("SimHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dSkinLabel2.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dSkinLabel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.dSkinLabel2.Location = new System.Drawing.Point(20, 2);
-            this.dSkinLabel2.Margin = new System.Windows.Forms.Padding(4);
+            this.dSkinLabel2.Location = new System.Drawing.Point(15, 2);
             this.dSkinLabel2.Name = "dSkinLabel2";
-            this.dSkinLabel2.Size = new System.Drawing.Size(48, 26);
+            this.dSkinLabel2.Size = new System.Drawing.Size(39, 21);
             this.dSkinLabel2.TabIndex = 2;
             this.dSkinLabel2.Text = "账号";
             // 
@@ -331,14 +322,13 @@
             this.dSkinTableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.dSkinTableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.dSkinTableLayoutPanel4.Controls.Add(this.loginBtn, 2, 0);
-            this.dSkinTableLayoutPanel4.Location = new System.Drawing.Point(37, 176);
-            this.dSkinTableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
+            this.dSkinTableLayoutPanel4.Location = new System.Drawing.Point(28, 138);
             this.dSkinTableLayoutPanel4.Name = "dSkinTableLayoutPanel4";
             this.dSkinTableLayoutPanel4.RightBottom = ((System.Drawing.Image)(resources.GetObject("dSkinTableLayoutPanel4.RightBottom")));
             this.dSkinTableLayoutPanel4.RowCount = 1;
             this.dSkinTableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.dSkinTableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.dSkinTableLayoutPanel4.Size = new System.Drawing.Size(419, 42);
+            this.dSkinTableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.dSkinTableLayoutPanel4.Size = new System.Drawing.Size(314, 34);
             this.dSkinTableLayoutPanel4.TabIndex = 11;
             // 
             // loginBtn
@@ -348,19 +338,18 @@
             this.loginBtn.ButtonBorderColor = System.Drawing.Color.LightSeaGreen;
             this.loginBtn.ButtonBorderWidth = 1;
             this.loginBtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.loginBtn.Font = new System.Drawing.Font("YouYuan", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.loginBtn.Font = new System.Drawing.Font("幼圆", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.loginBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.loginBtn.HoverColor = System.Drawing.Color.Empty;
             this.loginBtn.HoverImage = null;
-            this.loginBtn.Location = new System.Drawing.Point(128, 4);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.loginBtn.Location = new System.Drawing.Point(96, 3);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.NormalImage = null;
             this.loginBtn.PressColor = System.Drawing.Color.Empty;
             this.loginBtn.PressedImage = null;
             this.loginBtn.Radius = 15;
             this.loginBtn.ShowButtonBorder = true;
-            this.loginBtn.Size = new System.Drawing.Size(243, 34);
+            this.loginBtn.Size = new System.Drawing.Size(182, 27);
             this.loginBtn.TabIndex = 3;
             this.loginBtn.Text = "登     录";
             this.loginBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -376,24 +365,22 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.732484F));
             this.tableLayoutPanel4.Controls.Add(this.forgetLink, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.regLink, 1, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(37, 229);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(28, 180);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(419, 59);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(314, 47);
             this.tableLayoutPanel4.TabIndex = 5;
             // 
             // forgetLink
             // 
             this.forgetLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.forgetLink.BackColor = System.Drawing.Color.White;
-            this.forgetLink.Font = new System.Drawing.Font("SimHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.forgetLink.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.forgetLink.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.forgetLink.Location = new System.Drawing.Point(294, 4);
-            this.forgetLink.Margin = new System.Windows.Forms.Padding(4);
+            this.forgetLink.Location = new System.Drawing.Point(215, 3);
             this.forgetLink.Name = "forgetLink";
-            this.forgetLink.Size = new System.Drawing.Size(96, 23);
+            this.forgetLink.Size = new System.Drawing.Size(77, 18);
             this.forgetLink.TabIndex = 3;
             this.forgetLink.Text = "忘记密码？";
             this.forgetLink.Click += new System.EventHandler(this.forgetLink_Click);
@@ -401,12 +388,12 @@
             // regLink
             // 
             this.regLink.BackColor = System.Drawing.Color.White;
-            this.regLink.Font = new System.Drawing.Font("SimHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.regLink.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.regLink.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.regLink.Location = new System.Drawing.Point(62, 4);
-            this.regLink.Margin = new System.Windows.Forms.Padding(21, 4, 4, 4);
+            this.regLink.Location = new System.Drawing.Point(47, 3);
+            this.regLink.Margin = new System.Windows.Forms.Padding(16, 3, 3, 3);
             this.regLink.Name = "regLink";
-            this.regLink.Size = new System.Drawing.Size(78, 23);
+            this.regLink.Size = new System.Drawing.Size(63, 18);
             this.regLink.TabIndex = 2;
             this.regLink.Text = "立即注册";
             this.regLink.Click += new System.EventHandler(this.regLink_Click);
@@ -424,13 +411,12 @@
             this.dSkinTableLayoutPanel5.Controls.Add(this.label2, 1, 0);
             this.dSkinTableLayoutPanel5.Controls.Add(this.dSkinTableLayoutPanel6, 3, 0);
             this.dSkinTableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
-            this.dSkinTableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.dSkinTableLayoutPanel5.Name = "dSkinTableLayoutPanel5";
             this.dSkinTableLayoutPanel5.RightBottom = ((System.Drawing.Image)(resources.GetObject("dSkinTableLayoutPanel5.RightBottom")));
             this.dSkinTableLayoutPanel5.RowCount = 1;
             this.dSkinTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.dSkinTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.dSkinTableLayoutPanel5.Size = new System.Drawing.Size(1341, 48);
+            this.dSkinTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.dSkinTableLayoutPanel5.Size = new System.Drawing.Size(1006, 38);
             this.dSkinTableLayoutPanel5.TabIndex = 6;
             // 
             // pictureBox2
@@ -438,10 +424,10 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(17, 4);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(17, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(13, 3);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(13, 3, 3, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 40);
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -449,12 +435,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("YouYuan", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Font = new System.Drawing.Font("幼圆", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(71, 12);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 12, 4, 0);
+            this.label2.Location = new System.Drawing.Point(53, 10);
+            this.label2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(248, 24);
+            this.label2.Size = new System.Drawing.Size(209, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "动植检 数据管理系统";
             // 
@@ -462,21 +448,18 @@
             // 
             this.dSkinTableLayoutPanel6.BackColor = System.Drawing.Color.Transparent;
             this.dSkinTableLayoutPanel6.BitmapCache = false;
-            this.dSkinTableLayoutPanel6.ColumnCount = 3;
-            this.dSkinTableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.dSkinTableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.dSkinTableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.dSkinTableLayoutPanel6.Controls.Add(this.closeWin, 2, 0);
+            this.dSkinTableLayoutPanel6.ColumnCount = 2;
+            this.dSkinTableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.85714F));
+            this.dSkinTableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.14286F));
+            this.dSkinTableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.dSkinTableLayoutPanel6.Controls.Add(this.closeWin, 1, 0);
             this.dSkinTableLayoutPanel6.Controls.Add(this.minSize, 0, 0);
-            this.dSkinTableLayoutPanel6.Controls.Add(this.maxSize, 1, 0);
-            this.dSkinTableLayoutPanel6.Location = new System.Drawing.Point(1143, 4);
-            this.dSkinTableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4);
+            this.dSkinTableLayoutPanel6.Location = new System.Drawing.Point(857, 3);
             this.dSkinTableLayoutPanel6.Name = "dSkinTableLayoutPanel6";
             this.dSkinTableLayoutPanel6.RightBottom = ((System.Drawing.Image)(resources.GetObject("dSkinTableLayoutPanel6.RightBottom")));
             this.dSkinTableLayoutPanel6.RowCount = 1;
             this.dSkinTableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.dSkinTableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.dSkinTableLayoutPanel6.Size = new System.Drawing.Size(193, 40);
+            this.dSkinTableLayoutPanel6.Size = new System.Drawing.Size(145, 32);
             this.dSkinTableLayoutPanel6.TabIndex = 5;
             // 
             // closeWin
@@ -487,10 +470,10 @@
             this.closeWin.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
             this.closeWin.FlatAppearance.BorderSize = 0;
             this.closeWin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeWin.Location = new System.Drawing.Point(125, 10);
-            this.closeWin.Margin = new System.Windows.Forms.Padding(11, 10, 4, 4);
+            this.closeWin.Location = new System.Drawing.Point(70, 8);
+            this.closeWin.Margin = new System.Windows.Forms.Padding(8, 8, 3, 3);
             this.closeWin.Name = "closeWin";
-            this.closeWin.Size = new System.Drawing.Size(24, 22);
+            this.closeWin.Size = new System.Drawing.Size(18, 18);
             this.closeWin.TabIndex = 4;
             this.closeWin.UseVisualStyleBackColor = false;
             this.closeWin.Click += new System.EventHandler(this.closeWin_Click);
@@ -504,41 +487,24 @@
             this.minSize.FlatAppearance.BorderSize = 0;
             this.minSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minSize.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.minSize.Location = new System.Drawing.Point(11, 10);
-            this.minSize.Margin = new System.Windows.Forms.Padding(11, 10, 4, 4);
+            this.minSize.Location = new System.Drawing.Point(8, 8);
+            this.minSize.Margin = new System.Windows.Forms.Padding(8, 8, 3, 3);
             this.minSize.Name = "minSize";
-            this.minSize.Size = new System.Drawing.Size(27, 25);
+            this.minSize.Size = new System.Drawing.Size(20, 20);
             this.minSize.TabIndex = 2;
             this.minSize.UseVisualStyleBackColor = false;
             this.minSize.Click += new System.EventHandler(this.minSize_Click);
             // 
-            // maxSize
-            // 
-            this.maxSize.BackColor = System.Drawing.Color.Transparent;
-            this.maxSize.BackgroundImage = global::quarantine_app.Properties.Resources.最大化;
-            this.maxSize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.maxSize.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
-            this.maxSize.FlatAppearance.BorderSize = 0;
-            this.maxSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.maxSize.Location = new System.Drawing.Point(68, 10);
-            this.maxSize.Margin = new System.Windows.Forms.Padding(11, 10, 4, 4);
-            this.maxSize.Name = "maxSize";
-            this.maxSize.Size = new System.Drawing.Size(27, 25);
-            this.maxSize.TabIndex = 3;
-            this.maxSize.UseVisualStyleBackColor = false;
-            this.maxSize.Click += new System.EventHandler(this.maxSize_Click);
-            // 
             // loginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1340, 788);
+            this.ClientSize = new System.Drawing.Size(1005, 630);
             this.Controls.Add(this.loginBgPanel);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "loginForm";
             this.Text = "动植检 数据管理系统";
             this.SizeChanged += new System.EventHandler(this.loginForm_SizeChanged);
@@ -594,7 +560,6 @@
         private DSkin.Controls.DSkinTableLayoutPanel dSkinTableLayoutPanel6;
         private System.Windows.Forms.Button closeWin;
         private System.Windows.Forms.Button minSize;
-        private System.Windows.Forms.Button maxSize;
     }
 }
 

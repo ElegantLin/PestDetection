@@ -24,14 +24,14 @@ namespace quarantine_app
         Boolean sjzx_load = false;
         private string username;
         private int author;
-        private Boolean[] first_load = new Boolean[6]{true, true, true, true, true, true};
+        private Boolean[] first_load = new Boolean[6] { true, true, true, true, true, true };
         private String[] name_title = { "菜粉蝶/Pieris rapae", "琉璃灰蝶/Celastrina argiolus", "光肩星天牛/Anoplophora glabripennis" };
-        private String[] details = {           
+        private String[] details = {
             "鳞翅目Lepidoptera，粉蝶科Pieridae，粉蝶属Pieris",
             "鳞翅目Lepidoptera，灰碟科Lycaenidae，琉璃灰蝶属Celastrina",
             "天牛科Cerambycidae，沟胫天牛亚科 Lamiinae，星天牛属Anoplophora",
         };
-        private Image[] sources = { Properties.Resources.car2, Properties.Resources.car3, Properties.Resources.car1};
+        private Image[] sources = { Properties.Resources.car2, Properties.Resources.car3, Properties.Resources.car1 };
         private Image clicked = Properties.Resources.fill;
         private Image unclicked = Properties.Resources.empty;
 
@@ -95,14 +95,14 @@ namespace quarantine_app
                 dSkinTabItem4.Visible = false;
                 dSkinTabItem4.Enabled = false;
                 dSkinTabItem5.Visible = false;
-                dSkinTabItem5.Enabled = false;                
+                dSkinTabItem5.Enabled = false;
             }
             else
             {
                 dSkinTabItem4.Visible = true;
                 dSkinTabItem4.Enabled = true;
                 dSkinTabItem5.Visible = true;
-                dSkinTabItem5.Enabled = true;               
+                dSkinTabItem5.Enabled = true;
             }
             yhswIntro.Text = "    有害生物，是指在一定条件下，对人类的生活、生产甚至生存产生危害的生物；是由数量多而导致圈养动物和栽培作物、花卉、苗木受到重大损害的生物。\r\n    狭义上仅指动物，广义上包括动物、植物、微生物乃至病毒。\r\n    有害生物，包括危害植物的各种害虫、有害动物（蜗牛、螨类等）、病原微生物（真菌、细菌、放线菌病毒、类病毒、立克次体、类菌质体、线虫）和寄生性种子植物（菟丝子、槲寄生、桑寄生、列当）等。\r\n    田间杂草因具有对栽培植物的侵害性，往往也包括在内。";
             indexDisplay();
@@ -112,6 +112,8 @@ namespace quarantine_app
 
             windowWidth = System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Width;
             windowHeight = System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Height;
+            this.MaximizedBounds = Screen.PrimaryScreen.WorkingArea;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void GetAllInitInfo(Control ctrlContainer)
@@ -168,7 +170,7 @@ namespace quarantine_app
                         item.Width = Convert.ToInt32(itemWidth);//控件宽度，int类型
                         item.Height = Convert.ToInt32(itemHeight);//控件高度
                         item.Font = new Font(item.Font.Name, float.Parse((pos[4] * Math.Min(scaleX, scaleY)).ToString()));//字体
-                    }                  
+                    }
                 }
             }
 
@@ -237,25 +239,25 @@ namespace quarantine_app
         private void indexPlatformDyn(dynamic plat)
         {
             platformDyn.Rows.Clear();
-            int num = 0; 
+            int num = 0;
             foreach (dynamic r in plat)
             {
                 DSkinGridListRow sample = new DSkinGridListRow();
                 sample.Height = 19;
                 DSkinGridListCell title = new DSkinGridListCell();
                 title.Value = r["title"];
-                title.Font = new Font(new FontFamily("幼圆"), 10, FontStyle.Regular);
+                title.Font = new Font(new FontFamily("幼圆"), 12, FontStyle.Regular);
                 title.DockStyle = DockStyle.Left;
                 sample.Cells.Add(title);
                 DSkinGridListCell date = new DSkinGridListCell();
                 date.Value = r["date"];
-                date.Font = new Font(new FontFamily("幼圆"), 10, FontStyle.Regular);
+                date.Font = new Font(new FontFamily("幼圆"), 12, FontStyle.Regular);
                 sample.Cells.Add(date);
                 date.DockStyle = DockStyle.Right;
                 platformDyn.Rows.Add(sample);
                 num += 1;
                 if (num == 2) break;
-            }    
+            }
         }
 
         private void indexFlfgModule(dynamic flfg)
@@ -267,20 +269,20 @@ namespace quarantine_app
                 DSkinGridListRow sample = new DSkinGridListRow();
                 sample.Height = 19;
                 DSkinGridListCell title = new DSkinGridListCell();
-                int len = r["name"].ToString().Length > 25 ? 25: r["name"].ToString().Length;
+                int len = r["name"].ToString().Length > 25 ? 25 : r["name"].ToString().Length;
                 title.Value = r["name"].ToString().Substring(0, len) + "...";
-                title.Font = new Font(new FontFamily("幼圆"), 10, FontStyle.Regular);
+                title.Font = new Font(new FontFamily("幼圆"), 12, FontStyle.Regular);
                 title.DockStyle = DockStyle.Left;
                 sample.Cells.Add(title);
                 DSkinGridListCell date = new DSkinGridListCell();
                 date.Value = r["date"].ToString();
-                date.Font = new Font(new FontFamily("幼圆"), 10, FontStyle.Regular);
+                date.Font = new Font(new FontFamily("幼圆"), 12, FontStyle.Regular);
                 title.Tag = r["url"];
                 date.DockStyle = DockStyle.Right;
                 sample.Cells.Add(date);
                 flfgIndexList.Rows.Add(sample);
                 num += 1;
-                if (num == 5) break;
+                if (num == 8) break;
             }
         }
 
@@ -295,18 +297,18 @@ namespace quarantine_app
                 DSkinGridListCell title = new DSkinGridListCell();
                 int len = r["name"].ToString().Length > 25 ? 25 : r["name"].ToString().Length;
                 title.Value = r["name"].ToString().Substring(0, len) + "...";
-                title.Font = new Font(new FontFamily("幼圆"), 10, FontStyle.Regular);
+                title.Font = new Font(new FontFamily("幼圆"), 12, FontStyle.Regular);
                 title.DockStyle = DockStyle.Left;
                 sample.Cells.Add(title);
                 DSkinGridListCell date = new DSkinGridListCell();
                 date.Value = r["date"].ToString();
-                date.Font = new Font(new FontFamily("幼圆"), 10, FontStyle.Regular);
+                date.Font = new Font(new FontFamily("幼圆"), 12, FontStyle.Regular);
                 title.Tag = r["url"];
                 date.DockStyle = DockStyle.Right;
                 sample.Cells.Add(date);
                 xwzxIndexList.Rows.Add(sample);
                 num += 1;
-                if (num == 5) break;
+                if (num == 8) break;
             }
         }
 
@@ -1114,6 +1116,36 @@ namespace quarantine_app
         }
 
         private void dSkinLabel21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void topPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void xwzxIndexList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void platformDyn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dSkinLabel14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flfgIndexList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataCenterList_Click(object sender, EventArgs e)
         {
 
         }

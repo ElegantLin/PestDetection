@@ -35,6 +35,8 @@ namespace quarantine_app
             SetStyle(ControlStyles.AllPaintingInWmPaint, true); // 禁止擦除背景.
             SetStyle(ControlStyles.DoubleBuffer, true); // 双缓冲
             GetAllInitInfo(loginBgPanel);
+            this.MaximizedBounds = Screen.PrimaryScreen.WorkingArea;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void GetAllInitInfo(Control ctrlContainer)
@@ -58,6 +60,7 @@ namespace quarantine_app
             }
 
         }
+
 
         private void ControlsChangeInit(Control ctrlContainer)
         {
@@ -88,6 +91,11 @@ namespace quarantine_app
                     item.Top = Convert.ToInt32(pos[1] * scaleY - itemHeight / 2);//计算控件距离顶部距离
                     item.Width = Convert.ToInt32(itemWidth);//控件宽度，int类型
                     item.Height = Convert.ToInt32(itemHeight);//控件高度
+                    if (scaleX == 0 && scaleY == 0)
+                    {
+                        scaleX = 0.000001;
+                        scaleY = 0.000001;
+                    }
                     item.Font = new Font(item.Font.Name, float.Parse((pos[4] * Math.Min(scaleX, scaleY)).ToString()));//字体
 
                 }

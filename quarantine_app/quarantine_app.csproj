@@ -34,11 +34,10 @@
   <ItemGroup>
     <Reference Include="DSkin, Version=16.6.3.30, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DSkin.dll</HintPath>
+      <HintPath>..\..\..\AuthorizeDSkin20190322195256\【4.0】DSkin20210601213536\DSkin.dll</HintPath>
     </Reference>
-    <Reference Include="DSkin.Design, Version=16.6.3.30, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DSkin.Design.dll</HintPath>
+    <Reference Include="DSkin.Design">
+      <HintPath>..\..\..\AuthorizeDSkin20190322195256\【4.0】DSkin20210601213536\DSkin.Design.dll</HintPath>
     </Reference>
     <Reference Include="FastReport, Version=2021.3.0.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
